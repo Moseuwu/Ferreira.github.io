@@ -1,0 +1,98 @@
+/* style.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0f0f0f; /* Fundo escuro */
+    color: #fff;
+    overflow-x: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Títulos principais */
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: #00e5ff;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+/* Seções do conteúdo */
+.section {
+    margin: 40px 0;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.section:nth-child(odd) {
+    background: rgba(20, 20, 20, 0.9);
+}
+
+/* Efeitos de fade */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Botões de navegação */
+.scroll-btn {
+    font-size: 18px;
+    color: #00e5ff;
+    background-color: transparent;
+    border: 2px solid #00e5ff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 30px;
+}
+
+.scroll-btn:hover {
+    background-color: #00e5ff;
+    color: #0f0f0f;
+}
+
+/* Rodapé */
+.footer {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #aaa;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Links de navegação */
+a {
+    color: #00e5ff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
